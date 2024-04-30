@@ -35,6 +35,9 @@
     gap: 50px;
     list-style: none;
 }
+.navbar :hover{
+    background-color: rgb(173, 175, 33);
+}
 .navbar a{
     text-decoration: none;
     color: #3A3A3A;
@@ -60,4 +63,59 @@
 }
 .nav-background{
     background-image: url('./images/images/camera.png');
+}
+.banner-container{
+    width: 1100px;
+    height: 110px;
+    background-color: #ececec;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 350px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+/* responsive media query */
+@media screen and (max-width:576px) {
+    *{
+        margin-top: 30px;
+    }
+    .nav-container
+    
+    {
+        flex-direction: column;
+    }
+    .nav-container2{
+        flex-direction: column-reverse;
+    }
+    .bg-img{
+        position: relative;
+        left: 100px;
+
+    }
+    .navbar{
+        margin-right: 30px;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .nav-title, .nav-description,.btn-primary{
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+    }
+    .btn-primary{
+        margin-left: 30%;
+        margin-top: 10px;
+    }
+    .banner-container{
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width: 100%;
+        background-color:white;
+    }
+
 }
