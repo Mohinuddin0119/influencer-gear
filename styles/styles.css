@@ -63,6 +63,7 @@
 }
 .nav-background{
     background-image: url('../images/images/Circle design.svg');
+    background-repeat: no-repeat;
     margin-bottom: 100px;
 }
 .banner-container{
@@ -171,6 +172,17 @@
         display: grid;
         grid-template-columns: repeat(3,1fr);
     }
+    .nav-container2{
+        width: 100%;
+    }
+    .nav-background{
+        width: 100%;
+        background-position: 100%;
+    }
+    .bg-img{
+        width: 70%;
+        top:20px
+    }
     .nav-title, .nav-description,.btn-primary{
         text-align: center;
         margin: 0;
@@ -185,12 +197,13 @@
         margin-left: 0px;
         margin-right: 0px;
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
         width: 100%;
         background-color:white;
     }
     .popular-collection{
-        margin-top: 150px;
+        margin-top: 200px;
     }
     .collection{
         left: 10px;
@@ -233,7 +246,8 @@
         margin-top: 10px;
         margin-left: 0px;
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
         width: 100%;
         background-color:white;
     }
