@@ -8,13 +8,21 @@
 }
 
 *{
-    margin-top:20px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    font-style: normal;
+
 }
 /* shared styles */
 .btn-primary{
     background-color: #E02C6D;
     color: #ffff;
-    border-radius: 50px;
+    border-radius: 10px;
+    font-size: 15px;
     text-align: center;
     border: 0;
     margin: 0;
@@ -27,6 +35,7 @@
 /* header related styles */
 header{
     background-color:#d3adad ;
+    padding-top: 30px;
 }
 
 .nav-container{
@@ -38,6 +47,7 @@ header{
     display: flex;
     gap: 50px;
     list-style: none;
+    margin-top: 20px;
 }
 .navbar :hover{
     background-color: rgb(173, 175, 33);
@@ -53,15 +63,11 @@ header{
     margin-top: 100px;
 }
 .nav-title{
-    font-size: 1.8rem;
-    margin-left: 50px;
+    font-size: 2.5rem;
 }
 .nav-description{
     margin-left: 50px;
     color: var(--primary-color);
-}
-.btn-primary{
-    margin-left: 50px;
 }
 .bg-img{
     width: 100%;
@@ -79,12 +85,9 @@ header{
 .banner-container{
     width: 1100px;
     height: 110px;
-    /* background-color: #ececec; */
     display: flex;
-    justify-content: space-evenly;
-    margin-left: 350px;
-    margin-top: 20px;
-    margin-bottom: 100px;
+    justify-content: space-between;
+    padding: 30px 20%;
 }
 
 /* collection related styles */
@@ -102,13 +105,24 @@ header{
     position: relative;
     left: 400px;
 }
+.collection-section{
+    padding: 50px 10%;
+}
 .collection-container{
+    margin: 20px 0px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    align-items: center;
+    /* align-items: center; */
     width: 1075px;
     height: 1660px;
-    gap: 20px;
+    gap: 30px;
+}
+.collection-container .collection{
+    text-align: center;
+    padding: 30px 0px;
+    box-shadow:  0px 0px 20px 0px rgb(124, 94, 94);
+    border-radius: 15px;
+    background: #ffff;
 }
 .collection-description{
     color: #787885;
@@ -117,12 +131,15 @@ header{
 .collection:hover{
     border: 1px solid steelblue;
 }
-.btn-collection{
+.collection-section > .btn-collection{
+    display:flex;
+    text-align:center;
     color: #E02C6D;
-    position: relative;
-    left: 1480px;
-    margin-bottom: 100px;
-    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    /* margin-bottom: 100px;
+    margin-top: 10px; */
+    cursor: pointer;
 }
 .collection-img{
     width: 90%;
@@ -164,9 +181,6 @@ header{
 /* responsive media query */
 /* mobile device */
 @media screen and (max-width:576px) {
-    *{
-        margin-top: 30px;
-    }
     .nav-container
     {
         flex-direction: column;
@@ -193,15 +207,16 @@ header{
     .btn-primary{
         margin-left: 30%;
         margin-top: 10px;
+        margin-bottom: 20px;
     }
     .banner-container{
-        margin-top: 10px;
-        margin-left: 0px;
-        margin-right: 0px;
+        /* margin-left: 0px;
+        margin-right: 0px; */
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
         text-align: center;
         width: 100%;
+        padding: 30px 10px;
         background-color:white;
     }
     .popular-collection{
@@ -217,9 +232,12 @@ header{
         width: 90%;
         overflow: hidden;
     }
-    .btn-collection{
+    /* .collection-container .collection{
+       width: 0%;
+    } */
+    /* .btn-collection{
         left: 360px;
-    }
+    } */
     .featured-container{
         margin-top: 100px;
     }
@@ -247,18 +265,19 @@ header{
     .btn-primary{
         margin-left: 30%;
         margin-top: 10px;
+        margin-bottom: 20px;
     }
     .banner-container{
-        margin-top: 10px;
-        margin-left: 0px;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        text-align: center;
+        grid-template-columns: repeat(4,1fr);
+        /* text-align: center; */
+        align-items: center;
         width: 100%;
         background-color:white;
+        padding:40px;
     }
     .popular-collection{
-        margin-top: 150px;
+        margin-top: 50px;
     }
     .collection{
         left: 50px;
@@ -271,12 +290,17 @@ header{
         grid-template-columns: repeat(2,1fr);
         width: 90%;
         height: 100%;
+        overflow: hidden;
+
     }
-    .btn-collection{
-        margin-top: 20px;
+    .collection-container .collection{
+        margin-bottom: 50px;
+    }
+    /* .btn-collection{
+        margin-top: 10%;
         top:300px;
-        left:-30px;
-    }
+        left:-40px;
+    } */
     .featured-container{
         margin-top: 50px;
     }
