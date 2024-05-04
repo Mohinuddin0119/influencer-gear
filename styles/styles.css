@@ -94,12 +94,10 @@ header{
 }
 .collection{
     width: 330px;
-    height: 460px;
-    padding-left: 40px;
-    padding-bottom: 5px;
+    height: 465px;
     background-color: antiquewhite;
     position: relative;
-    left: 400px;
+    left: 300px;
 }
 .collection-section{
     padding: 50px 10%;
@@ -108,38 +106,41 @@ header{
     margin: 20px 0px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    /* align-items: center; */
     width: 1075px;
-    height: 1660px;
+    height:100%;
     gap: 30px;
 }
 .collection-container .collection{
     text-align: center;
-    padding: 30px 0px;
-    box-shadow:  0px 0px 20px 0px rgb(124, 94, 94);
+    padding: 30px;
+    box-shadow:  0px 0px 20px 0px rgb(19, 17, 17);
     border-radius: 15px;
     background: #ffff;
+    margin-top: 10px;
 }
 .collection-description{
     color: #787885;
     margin: 0;
 }
+.collection-title, .collection-price{
+    margin: 10px;
+    font-size: 1.5rem;
+}
 .collection:hover{
     border: 1px solid steelblue;
+    /* transform: translateY(-20px); */
 }
 .collection-section > .btn-collection{
     display:flex;
-    text-align: end;
+    justify-content:flex-end;
     color: #E02C6D;
     font-size: 1rem;
     font-weight: 600;
-    /* margin-bottom: 100px;
-    margin-top: 10px; */
     cursor: pointer;
 }
-.collection-img{
-    width: 90%;
-    height: 50%;
+.collection-section .collection-img{
+    width: 100%;
+    height: 70%;
 }
 
 /* --featured related styles-- */
@@ -219,21 +220,17 @@ header{
         margin-top: 10px;
     }
     .collection{
+        top: 10px;
         left: 10px;
-        width: 90%;
-        height: 100%;
+        width: 80%;
+        height: 92%;
     }
     .collection-container{
         grid-template-columns: 1fr;
-        width: 90%;
+        width: 100%;
+        height: 100%;
         overflow: hidden;
     }
-    /* .collection-container .collection{
-       gap: 30px;
-    } */
-    /* .btn-collection{
-        text-align: center;
-    } */
     .featured-container{
         margin-top: 100px;
     }
@@ -275,28 +272,25 @@ header{
     .popular-collection{
         margin-top: 50px;
     }
-    .collection{
-        left: 50px;
-        gap: 5px;
-        padding-bottom: 5px;
-        width: 90%;
-        height: 100%;
+    .collection-section{
+        padding: 50px 7%;
     }
-    .collection-container{
+    .collection{
+        left: 5px;
+        width: 70%;
+        height: 80%;
+        border: 2px solid saddlebrown;
+    }
+    .collection-section .collection-container{
         grid-template-columns: repeat(2,1fr);
-        width: 90%;
+        width: 100%;
         height: 100%;
         overflow: hidden;
 
     }
-    .collection-container .collection{
-        margin-bottom: 50px;
+    .collection-price, .collection-title{
+        margin: 0;
     }
-    /* .btn-collection{
-        margin-top: 10%;
-        top:300px;
-        left:-40px;
-    } */
     .featured-container{
         margin-top: 50px;
     }
