@@ -5,9 +5,6 @@
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-}
-
-*{
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -15,7 +12,6 @@
     font-family: "Poppins", sans-serif;
     list-style: none;
     font-style: normal;
-
 }
 /* shared styles */
 .btn-primary{
@@ -133,7 +129,7 @@ header{
 }
 .collection-section > .btn-collection{
     display:flex;
-    text-align:center;
+    text-align: end;
     color: #E02C6D;
     font-size: 1rem;
     font-weight: 600;
@@ -146,7 +142,7 @@ header{
     height: 50%;
 }
 
-/* featured related styles */
+/* --featured related styles-- */
 .featured-container{
     display: flex;
     justify-content:center;
@@ -220,7 +216,7 @@ header{
         background-color:white;
     }
     .popular-collection{
-        margin-top: 200px;
+        margin-top: 10px;
     }
     .collection{
         left: 10px;
@@ -233,10 +229,10 @@ header{
         overflow: hidden;
     }
     /* .collection-container .collection{
-       width: 0%;
+       gap: 30px;
     } */
     /* .btn-collection{
-        left: 360px;
+        text-align: center;
     } */
     .featured-container{
         margin-top: 100px;
